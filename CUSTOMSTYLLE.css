@@ -1,0 +1,93 @@
+  body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.pinimg.com/originals/ba/0e/b8/ba0eb82dbe74fb21925083c2ea7475b4.jpg');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background-color: rgba(255,255,255,0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .task-input {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .task-input input, select, button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            flex: 1;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .task-list {
+            list-style: none;
+            padding: 0;
+        }
+        .task-item {
+            background-color: #f4f4f4;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .progress-container {
+            margin-top: 20px;
+        }
+        .progress-bar {
+            height: 20px;
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .progress-fill {
+            height: 100%;
+            background-color: #28a745;
+            width: 0;
+            transition: width 0.4s;
+        }
+        .priority {
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: 5px;
+            color: #fff;
+        }
+        .high { background-color: #dc3545; }
+        .medium { background-color: #ffc107; }
+        .low { background-color: #28a745; }
+        .complete-btn {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            display: none;
+        }
+        .complete-btn.show {
+            display: block;
+        }

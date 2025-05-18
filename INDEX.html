@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List with Priority Levels and Progress Bar</title>
+    <link rel="stylesheet" href="CUSTOMSTYLLE.css">
+</head>
+<body>
+    <body>
+     <div class="container">
+        <h1>Task List</h1>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a task...">
+            <select id="priorityInput">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="taskList" class="task-list"></ul>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <p id="progressText">0% Completed</p>
+        </div>
+        <button id="completeBtn" class="complete-btn" onclick="completeWork()">Complete Work</button>
+    </div>
+    <script src="WALKING.JS"></script>
+</body>
+</html>
